@@ -15,6 +15,6 @@ export default [
     id: 3,
     name: "Ivan Tavarez",
     email: "tavarez_2345@gmail.com",
-    role: "Front end Developer"
+    role: "Frontend Developer"
   }
 ];

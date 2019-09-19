@@ -5,7 +5,7 @@ body,
 .App,
 #root {
   min-height: 100vh;
-  width: 100%;
+  max-width: 100%;
   margin: 0;
   padding: 0;
 }
@@ -55,12 +55,13 @@ input, textarea {
 button {
   background: #00f2fe;
   background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
-  border: none;
   padding: 10px 15px;
   font-size: 16px;
   color: #191919;
   box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.12), 0 2px 2px 1px rgba(0, 0, 0, 0.24);
   transition: all 0.2 ease-in;
+  border: none;
+  cursor: pointer;
 }
 button:hover {
   transform: translateY(-1px);
