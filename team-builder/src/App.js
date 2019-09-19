@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./App.css";
 import Data from "./data";
 import TeamMember from "./components/TeamMembers";
 import TeamForm from "./components/TeamForm";

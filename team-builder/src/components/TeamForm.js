@@ -4,7 +4,8 @@ const TeamForm = props => {
   console.log(props);
   const [person, setPerson] = useState({
     name: "",
-    email: ""
+    email: "",
+    role: ""
   });
 
   const changeHandler = event => {
@@ -27,7 +28,9 @@ const TeamForm = props => {
       <input
         type="text"
         name="name"
+        placeholder="Type your name"
         value={person.name}
+        required
         onChange={changeHandler}
       />
       <label htmlFor="email">Email</label>
@@ -36,6 +39,16 @@ const TeamForm = props => {
         name="email"
         placeholder="Type your email"
         value={person.email}
+        required
+        onChange={changeHandler}
+      />
+      <label htmlFor="role">Role</label>
+      <input
+        type="text"
+        name="role"
+        placeholder="Type your role"
+        value={person.role}
+        required
         onChange={changeHandler}
       />
       <button type="submit">Add Information</button>
